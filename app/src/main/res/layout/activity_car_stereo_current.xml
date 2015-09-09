@@ -91,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="number"
+                android:text="track number"
                 android:id="@+id/track_number"
                 android:layout_weight="0.60"
                 android:textSize="140dp"
@@ -106,8 +106,38 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
             android:background="#ff4a44de"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:weightSum="1">
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="99dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Volume Value"
+                    android:id="@+id/volume_value"
+                    android:textSize="60dp"
+                    android:layout_weight="0.01" />
+
+                <Button
+                    android:layout_width="254dp"
+                    android:layout_height="96dp"
+                    android:text="volume up"
+                    android:id="@+id/volume_up"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="254dp"
+                    android:layout_height="96dp"
+                    android:text="volume down"
+                    android:id="@+id/volume_down"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

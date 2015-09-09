@@ -17,17 +17,87 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
-            android:background="#ff000000"
-            android:layout_weight="1"></LinearLayout>
+            android:background="#ff85e5ed"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="131dp"
+                    android:layout_height="92dp"
+                    android:text="eject"
+                    android:id="@+id/eject_button"
+                    android:layout_weight="1"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="131dp"
+                    android:layout_height="92dp"
+                    android:text="back"
+                    android:id="@+id/back_button"
+                    android:layout_weight="1"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="131dp"
+                    android:layout_height="92dp"
+                    android:text="pause"
+                    android:id="@+id/pause_button"
+                    android:layout_weight="1"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="131dp"
+                    android:layout_height="92dp"
+                    android:text="stop"
+                    android:id="@+id/stop_button"
+                    android:layout_weight="1"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:layout_width="131dp"
+                    android:layout_height="92dp"
+                    android:text="forward"
+                    android:id="@+id/forward_button"
+                    android:layout_column="4"
+                    android:layout_weight="1"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff3f2e"
+                android:baselineAligned="true"
+                android:layout_weight="0.15"></LinearLayout>
+
+            <TextView
+                android:layout_width="665dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="number"
+                android:id="@+id/track_number"
+                android:layout_weight="0.60"
+                android:textSize="140dp" />
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
-            android:background="#ff000000"
-            android:layout_weight="1"></LinearLayout>
+            android:background="#ff4a44de"
+            android:layout_weight="1">
+
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -25,67 +25,48 @@
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_weight=".8">
 
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="eject"
-                    android:id="@+id/eject_button"
-                    android:layout_weight="1"
-                    android:textSize="30dp" />
-
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="play"
-                    android:id="@+id/play_button"
-                    android:layout_weight="1"
-                    android:textSize="30dp" />
-
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="back"
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:id="@+id/back_button"
                     android:layout_weight="1"
-                    android:textSize="30dp" />
+                    android:background="@android:drawable/ic_media_previous" />
 
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="pause"
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:id="@+id/pause_button"
-                    android:layout_weight="1"
-                    android:textSize="30dp" />
+                    android:background="@android:drawable/ic_media_pause"
+                    android:layout_weight="1" />
 
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="stop"
-                    android:id="@+id/stop_button"
-                    android:layout_weight="1"
-                    android:textSize="30dp" />
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/play_button"
+                    android:background="@android:drawable/ic_media_play"
+                    android:layout_weight="1" />
 
-                <Button
-                    android:layout_width="131dp"
-                    android:layout_height="92dp"
-                    android:text="forward"
-                    android:id="@+id/forward_button"
-                    android:layout_column="4"
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/next_button"
+                    android:background="@android:drawable/ic_media_next"
+                    android:longClickable="true"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/eject_button"
                     android:layout_weight="1"
-                    android:textSize="30dp" />
+                    android:background="@android:drawable/arrow_up_float"
+                    android:longClickable="true" />
             </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffff3f2e"
-                android:baselineAligned="true"
-                android:layout_weight="0.49"></LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -93,9 +74,22 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="track number"
                 android:id="@+id/track_number"
-                android:layout_weight="0.60"
-                android:textSize="140dp"
+                android:textSize="80dp"
                 android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="156dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="#ffff3f2e"
+                    android:baselineAligned="true"
+                    android:id="@+id/cd_slot"></LinearLayout>
+            </LinearLayout>
 
 
         </LinearLayout>

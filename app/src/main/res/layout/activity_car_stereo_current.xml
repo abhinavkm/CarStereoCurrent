@@ -33,6 +33,20 @@
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
+                    android:id="@+id/repeatButton"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_menu_rotate" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/stopButton"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_notification_overlay" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:id="@+id/back_button"
                     android:layout_weight="1"
                     android:background="@android:drawable/ic_media_previous" />

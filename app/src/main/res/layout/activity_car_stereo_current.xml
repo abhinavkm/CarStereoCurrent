@@ -95,7 +95,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
@@ -105,43 +105,110 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="266dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
 
                 <TextView
                     android:layout_width="247dp"
-                    android:layout_height="99dp"
+                    android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Volume Value"
                     android:id="@+id/volume_value"
                     android:textSize="60dp"
-                    android:layout_weight="0.01" />
+                    android:layout_weight="1" />
 
                 <Button
                     android:layout_width="254dp"
                     android:layout_height="96dp"
                     android:text="volume up"
                     android:id="@+id/volume_up"
-                    android:textSize="30dp" />
+                    android:textSize="30dp"
+                    android:layout_weight="1" />
 
                 <Button
                     android:layout_width="254dp"
                     android:layout_height="96dp"
                     android:text="volume down"
                     android:id="@+id/volume_down"
-                    android:textSize="30dp" />
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageView" />
-                </FrameLayout>
+                    android:textSize="30dp"
+                    android:layout_weight="1" />
 
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="speaker"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/first_preset_button"
+                    android:textSize="25dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/second_preset_button"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/third_preset_button"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/power_button"
+                    android:background="@mipmap/power"
+                    android:layout_gravity="bottom|right" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AM/FM"
+                        android:id="@+id/button"
+                        android:singleLine="true"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:background="#ffffffff"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
